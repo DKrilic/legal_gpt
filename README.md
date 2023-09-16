@@ -16,4 +16,17 @@ After installing the requirements, run the cells in the notebook to index the do
 The chat_setup.py script provides a simple chat UI using ipywidgets.
 
 
-This project was created as a way to learn more about conversational AI and gain hands-on experience with LangChain.
+This project was created as a way to learn more about conversational AI and gain hands-on experience with LangChain and embedded databases.
+
+# Usage example 
+
+I created a database out of "New Commentary on the Code of Canon Law (2000)" consisting of some 1900 pages. 
+Below is a snippet from the text as an example. 
+
+![pdf_snippet](https://github.com/DK-1995/legal_gpt/assets/145159719/14aed5d6-d328-4004-bbdc-e4c8c23f15cc)
+
+Using GPT-4 as a reference, it does not seem to know of this specific text:
+![default_gpt4](https://github.com/DK-1995/legal_gpt/assets/145159719/4d351dda-18a2-4343-911f-f0f6b5585e23)
+
+Whereas the Langchain model can retrieve the correct specific information (though still editing it slightly): 
+![embedded_gpt](https://github.com/DK-1995/legal_gpt/assets/145159719/d2d5f365-f15a-461e-aa29-729f1ad0b4f1)
